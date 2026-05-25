@@ -1,0 +1,30 @@
+[project]
+name = "mixteco-espanol-traductor"
+version = "0.1.0"
+description = "Proyecto de traducción Mixteco-Español y Español-Mixteco."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pandas>=2.2.0",
+    "openpyxl>=3.1.0",
+    "dvc>=3.50.0"
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0.0",
+    "ruff>=0.6.0",
+    "pre-commit>=3.7.0"
+]
+
+[tool.ruff]
+line-length = 88
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+ignore = []
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
