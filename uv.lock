@@ -1182,6 +1182,7 @@ dependencies = [
     { name = "dvc" },
     { name = "openpyxl" },
     { name = "pandas" },
+    { name = "pyarrow" },
 ]
 
 [package.dev-dependencies]
@@ -1197,6 +1198,7 @@ requires-dist = [
     { name = "dvc", specifier = ">=3.50.0" },
     { name = "openpyxl", specifier = ">=3.1.0" },
     { name = "pandas", specifier = ">=2.2.0" },
+    { name = "pyarrow", specifier = ">=24.0.0" },
 ]
 
 [package.metadata.requires-dev]
