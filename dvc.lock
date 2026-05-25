@@ -1,0 +1,26 @@
+schema: '2.0'
+stages:
+  extract_flores:
+    cmd: uv run python
+      src/mixteco_espanol_traductor/extraction/extract_flores.py
+    deps:
+    - path: src/mixteco_espanol_traductor/extraction/extract_flores.py
+      hash: md5
+      md5: 7720eef547eb9797ff725b735a78795c
+      size: 4155
+    outs:
+    - path: data/interim/flores200
+      hash: md5
+      md5: bc4fab4850092ad9777ec1601c770d29.dir
+      size: 222331
+      nfiles: 1
+    - path: data/processed/flores200
+      hash: md5
+      md5: df7013b075decc5712feb19dc13249f4.dir
+      size: 129204
+      nfiles: 1
+    - path: data/raw/flores200
+      hash: md5
+      md5: 1a859a9232e9ef5cc79b2a5ccffa158b.dir
+      size: 203438
+      nfiles: 1

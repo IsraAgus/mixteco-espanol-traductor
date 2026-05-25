@@ -1,0 +1,11 @@
+stages:
+  extract_flores:
+    cmd: uv run python src/mixteco_espanol_traductor/extraction/extract_flores.py
+
+    deps:
+      - src/mixteco_espanol_traductor/extraction/extract_flores.py
+
+    outs:
+      - data/raw/flores200
+      - data/interim/flores200
+      - data/processed/flores200
